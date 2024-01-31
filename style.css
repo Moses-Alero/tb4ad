@@ -289,7 +289,7 @@ footer {
     }
 
     .project img {
-        width: 60%;
+        width: 100px;
         height: auto;
         border-radius: 10px;
     }
@@ -332,6 +332,7 @@ footer {
 
     section.hero .name-quote-container {
         padding-left: 0;
+        padding-bottom: 2em;
     }
 
     section.hero .quote {
