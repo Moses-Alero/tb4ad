@@ -10,7 +10,7 @@ let gameHasEnded = true
 
 function createMoleImage() {
     const moleImage = document.createElement('img');
-    moleImage.src = '/gopher.png'; // Replace with the path to your mole image
+    moleImage.src = './gopher.png'; // Replace with the path to your mole image
     moleImage.alt = 'Mole';
     return moleImage;
 }
