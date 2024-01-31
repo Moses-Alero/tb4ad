@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="img-container">
+                <img src="https://avatars.githubusercontent.com/u/75664025?v=4" alt="">
+                <h3>ALERO</h3>
+            </div>
+            <div class="link-container">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#">Articles</a>
+            </div>
+        </nav> 
+    </header>
+
+    <section class="hero">
+        <div id="name-container" hx-trigger="load every">
+            <h1>I'm Just a Dude. </h1>
+            <p>Simple dude trying to do big things from a small place.I wouldn't mind leaving this small place for a change though</p>
+                 <p>If you really want to know more about me click <a href="/about">here</a></p>
+        </div>
+        <div class="name-quote-container">
+            <p class="quote">"Sometimes you wake up. Sometimes the fall kills you. And sometimes, when you fall, you fly"</p>
+            <p>- Neil Gaiman</p>
+        </div>
+        
+    </section>
+    <main>
+        <div class="projects-container" id="projects">
+            <h1>Projects</h1>
+            <ol>
+                <div class="project">
+                    <a href="https://github.com/Moses-Alero/tradeasy">
+                        <img src="https://tradeazy.vercel.app/icons/logo.svg" alt="">
+                        <div class="project-des">
+                            <h3>Tradeazy <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic-00.iconduck.com%2Fassets.00%2Ftypescript-plain-icon-256x256-ypojgpyj.png&f=1&nofb=1&ipt=cf872630d9bee5c13e90051a5a3de87198a270958bf7cb1df9d1284f40f2e44e&ipo=images" alt=""></h3>
+                            <p>API implementation for Invoice application</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/Moses-Alero/raft">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhandwiki.org%2Fwiki%2Fimages%2Fthumb%2F1%2F1b%2FRaft_Consensus_Algorithm_Mascot_on_transparent_background.svg%2F640px-Raft_Consensus_Algorithm_Mascot_on_transparent_background.svg.png&f=1&nofb=1&ipt=a11932c577812f8de9421f8287a6d423a607f71037b819cd2dade6d5e89eac77&ipo=images" alt="">
+                        <div class="project-des">
+                            <h3>Raft<img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/golang_logo_icon_171073.png" alt=""></h3>
+                            <p>An attempt at implementing the raft consensus algorithm</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/Moses-Alero/Orchestra">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.iconfinder.com%2Fdata%2Ficons%2Fthe-voice%2F300%2FConductor-512.png&f=1&nofb=1&ipt=eba3a6f3dd925959a869979ac79c281971440a8ad646991e99502a91492eead2&ipo=images" alt="">
+                        <div class="project-des">
+                            <h3>Orchestra <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/golang_logo_icon_171073.png" alt=""></h3>
+                            <p>Orchestration system for docker containers</p>
+                        </div>
+                    </a>
+                </div>  
+                <div class="project">
+                    <a href="https://github.com/Moses-Alero/HTMX_SHILL-CHAT"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Falchemists.io%2Fimages%2Fprojects%2Fhtmx%2Ficon.png&f=1&nofb=1&ipt=ff220b3993d618cfb389be73d7181a7db9a602ad349271e4bc647b194cc2523d&ipo=images" alt="">
+                        <div class="project-des">
+                            <h3>HTMX SHILL CHAT <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpluspng.com%2Fimg-png%2Fpython-logo-png-open-2000.png&f=1&nofb=1&ipt=e6a369099244b59acdf083e0037906890ca777136feb8d5ec93bfd58e2daa2af&ipo=images" alt=""></h3>
+                            <p>Simple chat app written with htmx and python. Had to satisfy my curiosity lol</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/Moses-Alero/baby-mq">
+                         <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvectorified.com%2Fimages%2Fmessage-queue-icon-7.png&f=1&nofb=1&ipt=1550fde8e515aa22526380504fae46df827afc3de0bd9a471c56a319bf3592ed&ipo=images"  alt="">
+                        <div class="project-des">
+                            <h3>Baby-mq <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/golang_logo_icon_171073.png" alt=""></h3>
+                            <p>What really is a message queue?</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="https://github.com/Moses-Alero/baby-mq">
+                         <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.freepnglogos.com%2Fuploads%2Fplay-button-png%2Fplay-button-png-image-download-pngm-23.png&f=1&nofb=1&ipt=609558187162ae8ce38cee23ef3cadf332dcae27a1c54d5c28762979b8e4a53b&ipo=images"  alt="">
+                        <div class="project-des">
+                            <h3>Watch-Party <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic-00.iconduck.com%2Fassets.00%2Ftypescript-plain-icon-256x256-ypojgpyj.png&f=1&nofb=1&ipt=cf872630d9bee5c13e90051a5a3de87198a270958bf7cb1df9d1284f40f2e44e&ipo=images" alt=""></h3>
+                            <p>An attempt to implement a video streaming server using WebRTC, </p>
+                        </div>
+                    </a>
+                </div>
+            </ol>
+        </div>
+        <div class="article-container">
+            <h1>Articles</h1>
+            <p>Unfortunately I have been a little too lazy to finish/publish anything I write</p>
+            <h3>Fancy whacking a Gopher instead</h3>
+            <button id="start-btn" >Whack a Gopher</button>
+            <div class="whack-mole">
+                <h2>Whack-a-Gopher</h2>
+                <div id="game-container">
+                </div>
+            </div>
+            <p id="score">Score: 0</p>  
+            <button id="end-btn">end game</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; ALERO</p>
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>
